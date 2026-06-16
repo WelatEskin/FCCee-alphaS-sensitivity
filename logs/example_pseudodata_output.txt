@@ -1,0 +1,2443 @@
+----------------------------------------
+FCC-ee alphaS generator-level production
+alphaS input : 0.118
+nEvents      : 1000000
+seed         : 999
+output file  : data/pseudo_data_alphaS_0118.root
+----------------------------------------
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.316      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change:  3 Oct 2025  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 25 May 2026 at 17:42:21    |  | 
+ |  |                                                                              |  | 
+ |  |   Program documentation and an archive of historic versions is found on:     |  | 
+ |  |                                                                              |  | 
+ |  |                               https://pythia.org/                            |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is authored by a collaboration consisting of:                       |  | 
+ |  |                                                                              |  | 
+ |  |   Javira Altmann, Christian Bierlich, Naomi Cooke, Nishita Desai,            |  | 
+ |  |   Ilkka Helenius, Philip Ilten, Leif Lonnblad, Stephen Mrenna,               |  | 
+ |  |   Christian Preuss, Torbjorn Sjostrand, and Peter Skands.                    |  | 
+ |  |                                                                              |  | 
+ |  |   The complete list of authors, including contact information and            |  | 
+ |  |   affiliations, can be found on https://pythia.org/.                         |  | 
+ |  |   Problems or bugs should be reported on email at authors@pythia.org.        |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is C. Bierlich et al,                           |  | 
+ |  |   'A comprehensive guide to the physics and usage of Pythia 8.3',            |  | 
+ |  |   SciPost Phys. Codebases 8-r8.3 (2022) [arXiv:2203.11601 [hep-ph]]          |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is released under the GNU General Public Licence version 2          |  | 
+ |  |   or later. Please respect the MCnet Guidelines for Generator Authors        |  | 
+ |  |   and Users.                                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2025 Torbjorn Sjostrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide e- with e+ at a CM energy of 9.120e+01 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | f fbar -> gamma*/Z0                            221 |   4.346e-04 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+ PYTHIA Warning in SimpleTimeShower::init: pTmin too low , raised to 0.535
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Beams:eCM                                     |                 91.20000 |    14000.000         0.0             | 
+ | Beams:idA                                     |                       11 |         2212                         | 
+ | Beams:idB                                     |                      -11 |         2212                         | 
+ | Random:seed                                   |                      999 |           -1               900000000 | 
+ | Random:setSeed                                |                       on |          off                         | 
+ | StringZ:useOldAExtra                          |                       on |          off                         | 
+ | TimeShower:alphaSorder                        |                        2 |            1           0           3 | 
+ | TimeShower:alphaSvalue                        |                  0.11800 |      0.13650   0.0600000     0.25000 | 
+ | WeakSingleBoson:ffbar2gmZ                     |                       on |          off                         | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+      23  Z0                                  3   0   0   91.18760    2.50419   10.00000    0.00000  7.87987e-14   1   1   0   0   0
+              0     1   0.1540492    0        1       -1 
+              1     1   0.1194935    0        2       -2 
+              2     1   0.1540386    0        3       -3 
+              3     1   0.1193325    0        4       -4 
+              4     1   0.1523269    0        5       -5 
+              5     0   0.0335480    0       11      -11 
+              6     0   0.0667305    0       12      -12 
+              7     0   0.0335477    0       13      -13 
+              8     0   0.0667305    0       14      -14 
+              9     0   0.0334720    0       15      -15 
+             10     0   0.0667305    0       16      -16 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+
+ --------  PYTHIA Info Listing  ---------------------------------------- 
+ 
+ Beam A: id =     11, pz =  4.560e+01, e =  4.560e+01, m =  5.110e-04.
+ Beam B: id =    -11, pz = -4.560e+01, e =  4.560e+01, m =  5.110e-04.
+
+ In 1: id =   11, x =  9.985e-01, pdf =  2.600e+01 at Q2 =  8.305e+03.
+ In 2: id =  -11, x =  1.000e+00, pdf =  1.823e+08 at same Q2.
+
+ Subprocess f fbar -> gamma*/Z0 with code 221 is 2 -> 1.
+ It has sHat =  8.305e+03.
+     alphaEM =  7.817e-03,  alphaS =  1.300e-01    at Q2 =  8.305e+03.
+
+ Impact parameter b =  0.000e+00 gives enhancement factor =  1.000e+00.
+ Max pT scale for MPI =  9.120e+01, ISR =  9.120e+01, FSR =  9.120e+01.
+ Number of MPI =     1, ISR =     1, FSRproc =     0, FSRreson =    10.
+
+ --------  End PYTHIA Info Listing  ------------------------------------
+
+ --------  PYTHIA Event Listing  (hard process)  -----------------------------------------------------------------------------------
+ 
+    no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m 
+     0         90  (system)           -11     0     0     0     0     0     0      0.000      0.000      0.000     91.200     91.200
+     1         11  (e-)               -12     0     0     3     0     0     0      0.000      0.000     45.600     45.600      0.001
+     2        -11  (e+)               -12     0     0     4     0     0     0      0.000      0.000    -45.600     45.600      0.001
+     3         11  (e-)               -21     1     0     5     0     0     0      0.000      0.000     45.531     45.531      0.000
+     4        -11  (e+)               -21     2     0     5     0     0     0      0.000      0.000    -45.600     45.600      0.000
+     5         23  (Z0)               -22     3     4     6     7     0     0      0.000      0.000     -0.069     91.131     91.131
+     6          4  c                   23     5     0     0     0   101     0     -7.737     30.430     32.952     45.540      1.500
+     7         -4  cbar                23     5     0     0     0     0   101      7.737    -30.430    -33.021     45.590      1.500
+                                   Charge sum:  0.000           Momentum sum:      0.000      0.000     -0.069     91.131     91.131
+
+ --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
+
+ --------  PYTHIA Event Listing  (complete event)  ---------------------------------------------------------------------------------
+ 
+    no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m 
+     0         90  (system)           -11     0     0     0     0     0     0      0.000      0.000      0.000     91.200     91.200
+     1         11  (e-)               -12     0     0     6     0     0     0      0.000      0.000     45.600     45.600      0.001
+     2        -11  (e+)               -12     0     0     7     0     0     0      0.000      0.000    -45.600     45.600      0.001
+     3         11  (e-)               -21     6     0     5     0     0     0      0.000      0.000     45.531     45.531      0.000
+     4        -11  (e+)               -21     7     7     5     0     0     0      0.000      0.000    -45.600     45.600      0.000
+     5         23  (Z0)               -22     3     4     8     8     0     0      0.000      0.000     -0.069     91.131     91.131
+     6         11  (e-)               -41     1     0     9     3     0     0      0.000      0.000     45.600     45.600      0.000
+     7        -11  (e+)               -42     2     0     4     4     0     0      0.000      0.000    -45.600     45.600      0.000
+     8         23  (Z0)               -44     5     5    12    13     0     0     -0.001     -0.003     -0.069     91.131     91.131
+     9         22  gamma               43     6     0     0     0     0     0      0.001      0.003      0.069      0.069      0.000
+    10         22  gamma               63     1     0     0     0     0     0      0.000      0.000      0.000      0.000      0.000
+    11         22  gamma               63     2     0     0     0     0     0      0.000      0.000     -0.000      0.000      0.000
+    12          4  (c)                -23     8     0    16    16   101     0     -7.738     30.429     32.952     45.540      1.500
+    13         -4  (cbar)             -23     8     0    14    15     0   101      7.737    -30.432    -33.021     45.591      1.500
+    14         -4  (cbar)             -51    13     0    19    19     0   102     13.374    -15.696    -19.824     28.644      1.500
+    15         21  (g)                -51    13     0    17    18   102   101     -5.964    -13.452    -11.807     18.866      0.000
+    16          4  (c)                -52    12    12    28    28   101     0     -7.412     29.145     31.562     43.621      1.500
+    17         21  (g)                -51    15     0    22    22   103   101     -5.822    -10.014     -8.232     14.211      0.000
+    18         21  (g)                -51    15     0    20    21   102   103      1.788     -5.663     -6.395      8.727      0.000
+    19         -4  (cbar)             -52    14    14    40    40     0   102     11.444    -13.471    -17.004     24.573      1.500
+    20         21  (g)                -51    18     0    38    39   102   105      0.493     -3.619     -1.988      4.159      0.000
+    21         21  (g)                -51    18     0    23    24   105   103      0.479     -3.446     -5.560      6.559      0.000
+    22         21  (g)                -52    17    17    25    25   103   101     -5.006     -8.611     -7.079     12.219      0.000
+    23         21  (g)                -51    21     0    32    33   105   106     -0.033     -5.117     -6.912      8.600      0.000
+    24         21  (g)                -51    21     0    34    34   106   103     -0.620     -0.278     -0.250      0.724      0.000
+    25         21  (g)                -52    22    22    26    27   103   101     -3.873     -6.662     -5.477      9.454      0.000
+    26         21  (g)                -51    25     0    37    37   103   108     -0.311      0.779      0.896      1.227      0.000
+    27         21  (g)                -51    25     0    29    30   108   101     -3.765     -6.645     -5.510      9.417      0.000
+    28          4  (c)                -52    16    16    31    31   101     0     -7.209     28.349     30.699     42.430      1.500
+    29         21  (g)                -51    27     0    35    36   108   109     -3.210     -6.752     -4.536      8.745      0.000
+    30         21  (g)                -51    27     0    41    42   109   101     -0.611      0.332     -0.731      1.009      0.000
+    31          4  (c)                -52    28    28    45    45   101     0     -7.152     28.124     30.456     42.094      1.500
+    32         21  (g)                -51    23     0    52    52   105   110      0.302     -1.963     -1.535      2.510      0.000
+    33         21  (g)                -51    23     0    51    51   110   106     -0.631     -3.286     -5.496      6.434      0.000
+    34         21  (g)                -52    24    24    50    50   106   103     -0.325     -0.146     -0.131      0.379      0.000
+    35         21  (g)                -51    29     0    43    43   112   109     -1.985     -5.562     -3.235      6.734      0.000
+    36         21  (g)                -51    29     0    48    48   108   112     -1.247     -1.137     -1.240      2.094      0.000
+    37         21  (g)                -52    26    26    49    49   103   108     -0.290      0.726      0.835      1.144      0.000
+    38         21  (g)                -51    20     0    53    53   114   105      0.024     -1.729     -0.569      1.820      0.000
+    39         21  (g)                -51    20     0    54    54   102   114      1.254     -2.780     -2.572      3.990      0.000
+    40         -4  (cbar)             -52    19    19    55    55     0   102     10.658    -12.582    -15.851     22.922      1.500
+    41         21  (g)                -51    30     0    46    46   115   101     -0.749      0.149     -1.120      1.356      0.000
+    42         21  (g)                -51    30     0    44     0   109   115     -0.253     -0.913     -0.247      0.979      0.000
+    43         21  (g)                -52    35    35    44     0   112   109     -1.594     -4.467     -2.598      5.408      0.000
+    44         21  (g)                -73    42    43    47    47   112   115     -1.847     -5.380     -2.845      6.387      0.584
+    45          4  (c)                -71    31    31    56    78   101     0     -7.152     28.124     30.456     42.094      1.500
+    46         21  (g)                -71    41    41    56    78   115   101     -0.749      0.149     -1.120      1.356      0.000
+    47         21  (g)                -71    44    44    56    78   112   115     -1.847     -5.380     -2.845      6.387      0.584
+    48         21  (g)                -71    36    36    56    78   108   112     -1.247     -1.137     -1.240      2.094      0.000
+    49         21  (g)                -71    37    37    56    78   103   108     -0.290      0.726      0.835      1.144      0.000
+    50         21  (g)                -71    34    34    56    78   106   103     -0.325     -0.146     -0.131      0.379      0.000
+    51         21  (g)                -71    33    33    56    78   110   106     -0.631     -3.286     -5.496      6.434      0.000
+    52         21  (g)                -71    32    32    56    78   105   110      0.302     -1.963     -1.535      2.510      0.000
+    53         21  (g)                -71    38    38    56    78   114   105      0.024     -1.729     -0.569      1.820      0.000
+    54         21  (g)                -71    39    39    56    78   102   114      1.254     -2.780     -2.572      3.990      0.000
+    55         -4  (cbar)             -71    40    40    56    78     0   102     10.658    -12.582    -15.851     22.922      1.500
+    56        411  (D+)               -83    45    55    95    97     0     0     -5.451     23.168     24.854     34.463      1.870
+    57       -213  (rho-)             -83    45    55    79    80     0     0     -1.568      2.524      3.277      4.494      0.791
+    58        213  (rho+)             -83    45    55    81    82     0     0      0.043      1.708      0.741      2.094      0.956
+    59       -211  pi-                 83    45    55     0     0     0     0     -0.422     -0.051      0.448      0.633      0.140
+    60        221  (eta)              -83    45    55    98   100     0     0     -0.164      0.241      0.098      0.628      0.548
+    61        223  (omega)            -83    45    55   101   103     0     0     -0.581      0.090      0.186      1.000      0.787
+    62        211  pi+                 83    45    55     0     0     0     0      0.002     -0.043      0.006      0.146      0.140
+    63        113  (rho0)             -83    45    55    83    84     0     0     -0.618     -1.411     -1.283      2.238      0.994
+    64       -211  pi-                 83    45    55     0     0     0     0     -0.248     -1.282     -1.196      1.776      0.140
+    65        213  (rho+)             -83    45    55    85    86     0     0     -0.807     -1.041     -0.836      1.751      0.795
+    66       -213  (rho-)             -83    45    55    87    88     0     0     -0.470     -0.583      0.175      1.095      0.779
+    67        111  (pi0)              -83    45    55   104   105     0     0     -0.978     -1.400     -0.946      1.957      0.135
+    68        221  (eta)              -84    45    55   106   108     0     0     -0.134      0.152      0.093      0.592      0.548
+    69        223  (omega)            -84    45    55   109   111     0     0      0.152     -0.830     -0.975      1.508      0.782
+    70        111  (pi0)              -84    45    55   112   113     0     0      0.249      0.058     -0.467      0.549      0.135
+    71        213  (rho+)             -84    45    55    89    90     0     0     -0.524     -0.493     -0.527      1.222      0.835
+    72        311  (K0)               -84    45    55    91    91     0     0     -0.263     -0.630     -0.950      1.271      0.498
+    73       -313  (K*bar0)           -84    45    55    92    93     0     0     -0.095     -1.823     -2.192      2.990      0.896
+    74        111  (pi0)              -84    45    55   114   115     0     0      0.173     -0.419     -0.092      0.482      0.135
+    75       3112  (Sigma-)           -84    45    55   116   117     0     0      0.994     -2.647     -2.737      4.113      1.197
+    76      -3112  (Sigmabar+)        -84    45    55   118   119     0     0      1.313     -3.054     -3.305      4.838      1.197
+    77       -211  pi-                 84    45    55     0     0     0     0      2.185     -2.704     -2.567      4.324      0.140
+    78       -423  (D*bar0)           -84    45    55   120   121     0     0      7.209     -9.535    -11.872     16.966      2.007
+    79       -211  pi-                 91    57     0     0     0     0     0     -0.508      0.818      1.604      1.876      0.140
+    80        111  (pi0)              -91    57     0   122   123     0     0     -1.060      1.707      1.672      2.618      0.135
+    81        211  pi+                 91    58     0     0     0     0     0      0.288      1.489      0.346      1.562      0.140
+    82        111  (pi0)              -91    58     0   124   125     0     0     -0.245      0.219      0.395      0.532      0.135
+    83        211  pi+                 91    63     0     0     0     0     0     -0.463     -0.088     -0.396      0.631      0.140
+    84       -211  pi-                 91    63     0     0     0     0     0     -0.155     -1.322     -0.887      1.606      0.140
+    85        211  pi+                 91    65     0     0     0     0     0     -0.716     -0.820     -0.952      1.453      0.140
+    86        111  (pi0)              -91    65     0   126   127     0     0     -0.092     -0.221      0.116      0.298      0.135
+    87       -211  pi-                 91    66     0     0     0     0     0     -0.599     -0.575      0.271      0.884      0.140
+    88        111  (pi0)              -91    66     0   128   129     0     0      0.129     -0.008     -0.096      0.210      0.135
+    89        211  pi+                 91    71     0     0     0     0     0     -0.413     -0.699     -0.332      0.888      0.140
+    90        111  (pi0)              -91    71     0   130   131     0     0     -0.111      0.206     -0.195      0.333      0.135
+    91        310  (K_S0)             -91    72    72   132   133     0     0     -0.263     -0.630     -0.950      1.271      0.498
+    92       -311  (Kbar0)            -91    73     0    94    94     0     0      0.122     -1.571     -1.957      2.562      0.498
+    93        111  (pi0)              -91    73     0   134   135     0     0     -0.216     -0.252     -0.235      0.428      0.135
+    94        130  K_L0                91    92    92     0     0     0     0      0.122     -1.571     -1.957      2.562      0.498
+    95        211  pi+                 91    56     0     0     0     0     0     -0.300      1.368      0.943      1.694      0.140
+    96        111  (pi0)              -91    56     0   136   137     0     0     -1.589      6.154      7.002      9.457      0.135
+    97        111  (pi0)              -91    56     0   138   139     0     0     -3.562     15.647     16.909     23.312      0.135
+    98        211  pi+                 91    60     0     0     0     0     0     -0.256      0.087      0.125      0.329      0.140
+    99       -211  pi-                 91    60     0     0     0     0     0      0.007      0.156      0.005      0.209      0.140
+   100         22  gamma               91    60     0     0     0     0     0      0.085     -0.001     -0.031      0.090      0.000
+   101        211  pi+                 91    61     0     0     0     0     0     -0.081     -0.178      0.181      0.301      0.140
+   102       -211  pi-                 91    61     0     0     0     0     0     -0.327      0.012      0.047      0.359      0.140
+   103        111  (pi0)              -91    61     0   140   141     0     0     -0.173      0.256     -0.042      0.340      0.135
+   104         22  gamma               91    67     0     0     0     0     0     -0.008      0.001     -0.002      0.009      0.000
+   105         22  gamma               91    67     0     0     0     0     0     -0.970     -1.402     -0.944      1.949      0.000
+   106        111  (pi0)              -91    68     0   142   143     0     0     -0.015     -0.063      0.145      0.209      0.135
+   107        111  (pi0)              -91    68     0   144   145     0     0     -0.057      0.128      0.021      0.196      0.135
+   108        111  (pi0)              -91    68     0   146   147     0     0     -0.062      0.087     -0.073      0.187      0.135
+   109        211  pi+                 91    69     0     0     0     0     0      0.145     -0.504     -0.717      0.899      0.140
+   110       -211  pi-                 91    69     0     0     0     0     0     -0.041     -0.282     -0.008      0.317      0.140
+   111        111  (pi0)              -91    69     0   148   149     0     0      0.047     -0.044     -0.250      0.292      0.135
+   112         22  gamma               91    70     0     0     0     0     0      0.218      0.086     -0.321      0.398      0.000
+   113         22  gamma               91    70     0     0     0     0     0      0.031     -0.028     -0.146      0.151      0.000
+   114         22  gamma               91    74     0     0     0     0     0      0.169     -0.255     -0.085      0.318      0.000
+   115         22  gamma               91    74     0     0     0     0     0      0.004     -0.164     -0.007      0.164      0.000
+   116       2112  n0                  91    75     0     0     0     0     0      0.872     -2.129     -1.979      3.177      0.940
+   117       -211  pi-                 91    75     0     0     0     0     0      0.123     -0.517     -0.758      0.936      0.140
+   118      -2112  nbar0               91    76     0     0     0     0     0      1.030     -2.750     -3.018      4.314      0.940
+   119        211  pi+                 91    76     0     0     0     0     0      0.283     -0.304     -0.287      0.524      0.140
+   120       -421  (Dbar0)            -91    78     0   150   152     0     0      6.674     -9.042    -11.214     15.985      1.865
+   121         22  gamma               91    78     0     0     0     0     0      0.536     -0.493     -0.658      0.981      0.000
+   122         22  gamma               91    80     0     0     0     0     0     -0.118      0.223      0.266      0.366      0.000
+   123         22  gamma               91    80     0     0     0     0     0     -0.942      1.484      1.407      2.251      0.000
+   124         22  gamma               91    82     0     0     0     0     0     -0.236      0.138      0.317      0.419      0.000
+   125         22  gamma               91    82     0     0     0     0     0     -0.009      0.081      0.079      0.113      0.000
+   126         22  gamma               91    86     0     0     0     0     0     -0.113     -0.098      0.062      0.162      0.000
+   127         22  gamma               91    86     0     0     0     0     0      0.022     -0.123      0.054      0.136      0.000
+   128         22  gamma               91    88     0     0     0     0     0      0.036      0.002      0.034      0.050      0.000
+   129         22  gamma               91    88     0     0     0     0     0      0.093     -0.009     -0.130      0.160      0.000
+   130         22  gamma               91    90     0     0     0     0     0     -0.049      0.201     -0.162      0.263      0.000
+   131         22  gamma               91    90     0     0     0     0     0     -0.062      0.005     -0.033      0.070      0.000
+   132        211  pi+                 91    91     0     0     0     0     0     -0.078     -0.308     -0.149      0.377      0.140
+   133       -211  pi-                 91    91     0     0     0     0     0     -0.185     -0.322     -0.801      0.894      0.140
+   134         22  gamma               91    93     0     0     0     0     0      0.007      0.000     -0.038      0.039      0.000
+   135         22  gamma               91    93     0     0     0     0     0     -0.223     -0.252     -0.197      0.390      0.000
+   136         22  gamma               91    96     0     0     0     0     0     -0.617      2.188      2.565      3.428      0.000
+   137         22  gamma               91    96     0     0     0     0     0     -0.972      3.965      4.437      6.030      0.000
+   138         22  gamma               91    97     0     0     0     0     0     -1.864      8.055      8.801     12.076      0.000
+   139         22  gamma               91    97     0     0     0     0     0     -1.698      7.591      8.108     11.236      0.000
+   140         22  gamma               91   103     0     0     0     0     0     -0.057      0.037     -0.061      0.091      0.000
+   141         22  gamma               91   103     0     0     0     0     0     -0.117      0.219      0.019      0.249      0.000
+   142         22  gamma               91   106     0     0     0     0     0      0.028      0.016      0.105      0.110      0.000
+   143         22  gamma               91   106     0     0     0     0     0     -0.043     -0.079      0.040      0.098      0.000
+   144         22  gamma               91   107     0     0     0     0     0     -0.082      0.119      0.054      0.154      0.000
+   145         22  gamma               91   107     0     0     0     0     0      0.024      0.010     -0.033      0.042      0.000
+   146         22  gamma               91   108     0     0     0     0     0     -0.024     -0.002      0.035      0.042      0.000
+   147         22  gamma               91   108     0     0     0     0     0     -0.038      0.089     -0.108      0.145      0.000
+   148         22  gamma               91   111     0     0     0     0     0      0.035      0.036     -0.035      0.061      0.000
+   149         22  gamma               91   111     0     0     0     0     0      0.012     -0.080     -0.216      0.230      0.000
+   150        310  (K_S0)             -91   120     0   153   154     0     0      3.808     -5.608     -7.047      9.791      0.498
+   151       -211  pi-                 91   120     0     0     0     0     0      1.468     -1.764     -1.485      2.737      0.140
+   152        211  pi+                 91   120     0     0     0     0     0      1.398     -1.670     -2.681      3.457      0.140
+   153        211  pi+                 91   150     0     0     0     0     0      1.311     -2.120     -2.358      3.434      0.140
+   154       -211  pi-                 91   150     0     0     0     0     0      2.497     -3.488     -4.689      6.357      0.140
+                                   Charge sum:  0.000           Momentum sum:     -0.000      0.000      0.000     91.200     91.200
+
+ --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.3
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+
+ Pythia::next(): 1000 events have been generated 
+
+ Pythia::next(): 2000 events have been generated 
+
+ Pythia::next(): 3000 events have been generated 
+
+ Pythia::next(): 4000 events have been generated 
+
+ Pythia::next(): 5000 events have been generated 
+
+ Pythia::next(): 6000 events have been generated 
+
+ Pythia::next(): 7000 events have been generated 
+
+ Pythia::next(): 8000 events have been generated 
+
+ Pythia::next(): 9000 events have been generated 
+Processed 10000 / 1000000 events, accepted 10000
+
+ Pythia::next(): 10000 events have been generated 
+
+ Pythia::next(): 11000 events have been generated 
+
+ Pythia::next(): 12000 events have been generated 
+
+ Pythia::next(): 13000 events have been generated 
+
+ Pythia::next(): 14000 events have been generated 
+
+ Pythia::next(): 15000 events have been generated 
+
+ Pythia::next(): 16000 events have been generated 
+
+ Pythia::next(): 17000 events have been generated 
+
+ Pythia::next(): 18000 events have been generated 
+
+ Pythia::next(): 19000 events have been generated 
+Processed 20000 / 1000000 events, accepted 20000
+
+ Pythia::next(): 20000 events have been generated 
+ PYTHIA Warning in HadronWidths::pickMasses: angular momentum and running widths not used
+
+ Pythia::next(): 21000 events have been generated 
+
+ Pythia::next(): 22000 events have been generated 
+
+ Pythia::next(): 23000 events have been generated 
+
+ Pythia::next(): 24000 events have been generated 
+
+ Pythia::next(): 25000 events have been generated 
+
+ Pythia::next(): 26000 events have been generated 
+
+ Pythia::next(): 27000 events have been generated 
+
+ Pythia::next(): 28000 events have been generated 
+
+ Pythia::next(): 29000 events have been generated 
+Processed 30000 / 1000000 events, accepted 30000
+
+ Pythia::next(): 30000 events have been generated 
+
+ Pythia::next(): 31000 events have been generated 
+
+ Pythia::next(): 32000 events have been generated 
+
+ Pythia::next(): 33000 events have been generated 
+
+ Pythia::next(): 34000 events have been generated 
+
+ Pythia::next(): 35000 events have been generated 
+
+ Pythia::next(): 36000 events have been generated 
+
+ Pythia::next(): 37000 events have been generated 
+
+ Pythia::next(): 38000 events have been generated 
+
+ Pythia::next(): 39000 events have been generated 
+Processed 40000 / 1000000 events, accepted 40000
+
+ Pythia::next(): 40000 events have been generated 
+
+ Pythia::next(): 41000 events have been generated 
+
+ Pythia::next(): 42000 events have been generated 
+
+ Pythia::next(): 43000 events have been generated 
+
+ Pythia::next(): 44000 events have been generated 
+
+ Pythia::next(): 45000 events have been generated 
+
+ Pythia::next(): 46000 events have been generated 
+
+ Pythia::next(): 47000 events have been generated 
+
+ Pythia::next(): 48000 events have been generated 
+
+ Pythia::next(): 49000 events have been generated 
+Processed 50000 / 1000000 events, accepted 50000
+
+ Pythia::next(): 50000 events have been generated 
+
+ Pythia::next(): 51000 events have been generated 
+
+ Pythia::next(): 52000 events have been generated 
+
+ Pythia::next(): 53000 events have been generated 
+
+ Pythia::next(): 54000 events have been generated 
+
+ Pythia::next(): 55000 events have been generated 
+
+ Pythia::next(): 56000 events have been generated 
+
+ Pythia::next(): 57000 events have been generated 
+
+ Pythia::next(): 58000 events have been generated 
+
+ Pythia::next(): 59000 events have been generated 
+Processed 60000 / 1000000 events, accepted 60000
+
+ Pythia::next(): 60000 events have been generated 
+
+ Pythia::next(): 61000 events have been generated 
+
+ Pythia::next(): 62000 events have been generated 
+
+ Pythia::next(): 63000 events have been generated 
+
+ Pythia::next(): 64000 events have been generated 
+
+ Pythia::next(): 65000 events have been generated 
+
+ Pythia::next(): 66000 events have been generated 
+
+ Pythia::next(): 67000 events have been generated 
+
+ Pythia::next(): 68000 events have been generated 
+
+ Pythia::next(): 69000 events have been generated 
+Processed 70000 / 1000000 events, accepted 70000
+
+ Pythia::next(): 70000 events have been generated 
+
+ Pythia::next(): 71000 events have been generated 
+
+ Pythia::next(): 72000 events have been generated 
+
+ Pythia::next(): 73000 events have been generated 
+
+ Pythia::next(): 74000 events have been generated 
+
+ Pythia::next(): 75000 events have been generated 
+
+ Pythia::next(): 76000 events have been generated 
+
+ Pythia::next(): 77000 events have been generated 
+
+ Pythia::next(): 78000 events have been generated 
+
+ Pythia::next(): 79000 events have been generated 
+Processed 80000 / 1000000 events, accepted 80000
+
+ Pythia::next(): 80000 events have been generated 
+
+ Pythia::next(): 81000 events have been generated 
+
+ Pythia::next(): 82000 events have been generated 
+
+ Pythia::next(): 83000 events have been generated 
+
+ Pythia::next(): 84000 events have been generated 
+
+ Pythia::next(): 85000 events have been generated 
+
+ Pythia::next(): 86000 events have been generated 
+
+ Pythia::next(): 87000 events have been generated 
+
+ Pythia::next(): 88000 events have been generated 
+
+ Pythia::next(): 89000 events have been generated 
+Processed 90000 / 1000000 events, accepted 90000
+
+ Pythia::next(): 90000 events have been generated 
+
+ Pythia::next(): 91000 events have been generated 
+
+ Pythia::next(): 92000 events have been generated 
+
+ Pythia::next(): 93000 events have been generated 
+
+ Pythia::next(): 94000 events have been generated 
+
+ Pythia::next(): 95000 events have been generated 
+
+ Pythia::next(): 96000 events have been generated 
+
+ Pythia::next(): 97000 events have been generated 
+
+ Pythia::next(): 98000 events have been generated 
+
+ Pythia::next(): 99000 events have been generated 
+Processed 100000 / 1000000 events, accepted 100000
+
+ Pythia::next(): 100000 events have been generated 
+
+ Pythia::next(): 101000 events have been generated 
+
+ Pythia::next(): 102000 events have been generated 
+
+ Pythia::next(): 103000 events have been generated 
+
+ Pythia::next(): 104000 events have been generated 
+
+ Pythia::next(): 105000 events have been generated 
+
+ Pythia::next(): 106000 events have been generated 
+
+ Pythia::next(): 107000 events have been generated 
+
+ Pythia::next(): 108000 events have been generated 
+
+ Pythia::next(): 109000 events have been generated 
+Processed 110000 / 1000000 events, accepted 110000
+
+ Pythia::next(): 110000 events have been generated 
+
+ Pythia::next(): 111000 events have been generated 
+
+ Pythia::next(): 112000 events have been generated 
+
+ Pythia::next(): 113000 events have been generated 
+
+ Pythia::next(): 114000 events have been generated 
+
+ Pythia::next(): 115000 events have been generated 
+
+ Pythia::next(): 116000 events have been generated 
+
+ Pythia::next(): 117000 events have been generated 
+
+ Pythia::next(): 118000 events have been generated 
+
+ Pythia::next(): 119000 events have been generated 
+Processed 120000 / 1000000 events, accepted 120000
+
+ Pythia::next(): 120000 events have been generated 
+
+ Pythia::next(): 121000 events have been generated 
+
+ Pythia::next(): 122000 events have been generated 
+
+ Pythia::next(): 123000 events have been generated 
+
+ Pythia::next(): 124000 events have been generated 
+
+ Pythia::next(): 125000 events have been generated 
+
+ Pythia::next(): 126000 events have been generated 
+
+ Pythia::next(): 127000 events have been generated 
+
+ Pythia::next(): 128000 events have been generated 
+ PYTHIA Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon
+
+ Pythia::next(): 129000 events have been generated 
+Processed 130000 / 1000000 events, accepted 130000
+
+ Pythia::next(): 130000 events have been generated 
+
+ Pythia::next(): 131000 events have been generated 
+
+ Pythia::next(): 132000 events have been generated 
+
+ Pythia::next(): 133000 events have been generated 
+
+ Pythia::next(): 134000 events have been generated 
+
+ Pythia::next(): 135000 events have been generated 
+
+ Pythia::next(): 136000 events have been generated 
+
+ Pythia::next(): 137000 events have been generated 
+
+ Pythia::next(): 138000 events have been generated 
+
+ Pythia::next(): 139000 events have been generated 
+Processed 140000 / 1000000 events, accepted 140000
+
+ Pythia::next(): 140000 events have been generated 
+
+ Pythia::next(): 141000 events have been generated 
+
+ Pythia::next(): 142000 events have been generated 
+
+ Pythia::next(): 143000 events have been generated 
+
+ Pythia::next(): 144000 events have been generated 
+
+ Pythia::next(): 145000 events have been generated 
+
+ Pythia::next(): 146000 events have been generated 
+
+ Pythia::next(): 147000 events have been generated 
+
+ Pythia::next(): 148000 events have been generated 
+
+ Pythia::next(): 149000 events have been generated 
+Processed 150000 / 1000000 events, accepted 150000
+
+ Pythia::next(): 150000 events have been generated 
+
+ Pythia::next(): 151000 events have been generated 
+
+ Pythia::next(): 152000 events have been generated 
+
+ Pythia::next(): 153000 events have been generated 
+
+ Pythia::next(): 154000 events have been generated 
+
+ Pythia::next(): 155000 events have been generated 
+
+ Pythia::next(): 156000 events have been generated 
+
+ Pythia::next(): 157000 events have been generated 
+
+ Pythia::next(): 158000 events have been generated 
+
+ Pythia::next(): 159000 events have been generated 
+Processed 160000 / 1000000 events, accepted 160000
+
+ Pythia::next(): 160000 events have been generated 
+
+ Pythia::next(): 161000 events have been generated 
+
+ Pythia::next(): 162000 events have been generated 
+
+ Pythia::next(): 163000 events have been generated 
+
+ Pythia::next(): 164000 events have been generated 
+
+ Pythia::next(): 165000 events have been generated 
+
+ Pythia::next(): 166000 events have been generated 
+
+ Pythia::next(): 167000 events have been generated 
+
+ Pythia::next(): 168000 events have been generated 
+
+ Pythia::next(): 169000 events have been generated 
+Processed 170000 / 1000000 events, accepted 170000
+
+ Pythia::next(): 170000 events have been generated 
+
+ Pythia::next(): 171000 events have been generated 
+
+ Pythia::next(): 172000 events have been generated 
+
+ Pythia::next(): 173000 events have been generated 
+
+ Pythia::next(): 174000 events have been generated 
+
+ Pythia::next(): 175000 events have been generated 
+
+ Pythia::next(): 176000 events have been generated 
+
+ Pythia::next(): 177000 events have been generated 
+
+ Pythia::next(): 178000 events have been generated 
+
+ Pythia::next(): 179000 events have been generated 
+Processed 180000 / 1000000 events, accepted 180000
+
+ Pythia::next(): 180000 events have been generated 
+
+ Pythia::next(): 181000 events have been generated 
+
+ Pythia::next(): 182000 events have been generated 
+
+ Pythia::next(): 183000 events have been generated 
+
+ Pythia::next(): 184000 events have been generated 
+
+ Pythia::next(): 185000 events have been generated 
+
+ Pythia::next(): 186000 events have been generated 
+
+ Pythia::next(): 187000 events have been generated 
+
+ Pythia::next(): 188000 events have been generated 
+
+ Pythia::next(): 189000 events have been generated 
+Processed 190000 / 1000000 events, accepted 190000
+
+ Pythia::next(): 190000 events have been generated 
+
+ Pythia::next(): 191000 events have been generated 
+
+ Pythia::next(): 192000 events have been generated 
+
+ Pythia::next(): 193000 events have been generated 
+
+ Pythia::next(): 194000 events have been generated 
+
+ Pythia::next(): 195000 events have been generated 
+
+ Pythia::next(): 196000 events have been generated 
+
+ Pythia::next(): 197000 events have been generated 
+
+ Pythia::next(): 198000 events have been generated 
+
+ Pythia::next(): 199000 events have been generated 
+Processed 200000 / 1000000 events, accepted 200000
+
+ Pythia::next(): 200000 events have been generated 
+
+ Pythia::next(): 201000 events have been generated 
+
+ Pythia::next(): 202000 events have been generated 
+
+ Pythia::next(): 203000 events have been generated 
+
+ Pythia::next(): 204000 events have been generated 
+
+ Pythia::next(): 205000 events have been generated 
+
+ Pythia::next(): 206000 events have been generated 
+
+ Pythia::next(): 207000 events have been generated 
+
+ Pythia::next(): 208000 events have been generated 
+
+ Pythia::next(): 209000 events have been generated 
+Processed 210000 / 1000000 events, accepted 210000
+
+ Pythia::next(): 210000 events have been generated 
+
+ Pythia::next(): 211000 events have been generated 
+
+ Pythia::next(): 212000 events have been generated 
+
+ Pythia::next(): 213000 events have been generated 
+
+ Pythia::next(): 214000 events have been generated 
+
+ Pythia::next(): 215000 events have been generated 
+
+ Pythia::next(): 216000 events have been generated 
+
+ Pythia::next(): 217000 events have been generated 
+
+ Pythia::next(): 218000 events have been generated 
+
+ Pythia::next(): 219000 events have been generated 
+Processed 220000 / 1000000 events, accepted 220000
+
+ Pythia::next(): 220000 events have been generated 
+
+ Pythia::next(): 221000 events have been generated 
+
+ Pythia::next(): 222000 events have been generated 
+
+ Pythia::next(): 223000 events have been generated 
+
+ Pythia::next(): 224000 events have been generated 
+
+ Pythia::next(): 225000 events have been generated 
+
+ Pythia::next(): 226000 events have been generated 
+
+ Pythia::next(): 227000 events have been generated 
+
+ Pythia::next(): 228000 events have been generated 
+
+ Pythia::next(): 229000 events have been generated 
+Processed 230000 / 1000000 events, accepted 230000
+
+ Pythia::next(): 230000 events have been generated 
+
+ Pythia::next(): 231000 events have been generated 
+
+ Pythia::next(): 232000 events have been generated 
+
+ Pythia::next(): 233000 events have been generated 
+
+ Pythia::next(): 234000 events have been generated 
+
+ Pythia::next(): 235000 events have been generated 
+
+ Pythia::next(): 236000 events have been generated 
+
+ Pythia::next(): 237000 events have been generated 
+
+ Pythia::next(): 238000 events have been generated 
+
+ Pythia::next(): 239000 events have been generated 
+Processed 240000 / 1000000 events, accepted 240000
+
+ Pythia::next(): 240000 events have been generated 
+
+ Pythia::next(): 241000 events have been generated 
+
+ Pythia::next(): 242000 events have been generated 
+
+ Pythia::next(): 243000 events have been generated 
+
+ Pythia::next(): 244000 events have been generated 
+
+ Pythia::next(): 245000 events have been generated 
+
+ Pythia::next(): 246000 events have been generated 
+
+ Pythia::next(): 247000 events have been generated 
+
+ Pythia::next(): 248000 events have been generated 
+
+ Pythia::next(): 249000 events have been generated 
+Processed 250000 / 1000000 events, accepted 250000
+
+ Pythia::next(): 250000 events have been generated 
+
+ Pythia::next(): 251000 events have been generated 
+
+ Pythia::next(): 252000 events have been generated 
+
+ Pythia::next(): 253000 events have been generated 
+
+ Pythia::next(): 254000 events have been generated 
+
+ Pythia::next(): 255000 events have been generated 
+
+ Pythia::next(): 256000 events have been generated 
+
+ Pythia::next(): 257000 events have been generated 
+
+ Pythia::next(): 258000 events have been generated 
+
+ Pythia::next(): 259000 events have been generated 
+Processed 260000 / 1000000 events, accepted 260000
+
+ Pythia::next(): 260000 events have been generated 
+
+ Pythia::next(): 261000 events have been generated 
+
+ Pythia::next(): 262000 events have been generated 
+
+ Pythia::next(): 263000 events have been generated 
+
+ Pythia::next(): 264000 events have been generated 
+
+ Pythia::next(): 265000 events have been generated 
+
+ Pythia::next(): 266000 events have been generated 
+
+ Pythia::next(): 267000 events have been generated 
+
+ Pythia::next(): 268000 events have been generated 
+
+ Pythia::next(): 269000 events have been generated 
+Processed 270000 / 1000000 events, accepted 270000
+
+ Pythia::next(): 270000 events have been generated 
+
+ Pythia::next(): 271000 events have been generated 
+
+ Pythia::next(): 272000 events have been generated 
+
+ Pythia::next(): 273000 events have been generated 
+
+ Pythia::next(): 274000 events have been generated 
+
+ Pythia::next(): 275000 events have been generated 
+
+ Pythia::next(): 276000 events have been generated 
+
+ Pythia::next(): 277000 events have been generated 
+
+ Pythia::next(): 278000 events have been generated 
+
+ Pythia::next(): 279000 events have been generated 
+Processed 280000 / 1000000 events, accepted 280000
+
+ Pythia::next(): 280000 events have been generated 
+
+ Pythia::next(): 281000 events have been generated 
+
+ Pythia::next(): 282000 events have been generated 
+
+ Pythia::next(): 283000 events have been generated 
+
+ Pythia::next(): 284000 events have been generated 
+
+ Pythia::next(): 285000 events have been generated 
+
+ Pythia::next(): 286000 events have been generated 
+
+ Pythia::next(): 287000 events have been generated 
+
+ Pythia::next(): 288000 events have been generated 
+
+ Pythia::next(): 289000 events have been generated 
+Processed 290000 / 1000000 events, accepted 290000
+
+ Pythia::next(): 290000 events have been generated 
+
+ Pythia::next(): 291000 events have been generated 
+
+ Pythia::next(): 292000 events have been generated 
+
+ Pythia::next(): 293000 events have been generated 
+
+ Pythia::next(): 294000 events have been generated 
+
+ Pythia::next(): 295000 events have been generated 
+
+ Pythia::next(): 296000 events have been generated 
+
+ Pythia::next(): 297000 events have been generated 
+
+ Pythia::next(): 298000 events have been generated 
+
+ Pythia::next(): 299000 events have been generated 
+Processed 300000 / 1000000 events, accepted 300000
+
+ Pythia::next(): 300000 events have been generated 
+
+ Pythia::next(): 301000 events have been generated 
+
+ Pythia::next(): 302000 events have been generated 
+
+ Pythia::next(): 303000 events have been generated 
+
+ Pythia::next(): 304000 events have been generated 
+
+ Pythia::next(): 305000 events have been generated 
+
+ Pythia::next(): 306000 events have been generated 
+
+ Pythia::next(): 307000 events have been generated 
+
+ Pythia::next(): 308000 events have been generated 
+
+ Pythia::next(): 309000 events have been generated 
+Processed 310000 / 1000000 events, accepted 310000
+
+ Pythia::next(): 310000 events have been generated 
+
+ Pythia::next(): 311000 events have been generated 
+
+ Pythia::next(): 312000 events have been generated 
+
+ Pythia::next(): 313000 events have been generated 
+
+ Pythia::next(): 314000 events have been generated 
+
+ Pythia::next(): 315000 events have been generated 
+
+ Pythia::next(): 316000 events have been generated 
+
+ Pythia::next(): 317000 events have been generated 
+
+ Pythia::next(): 318000 events have been generated 
+
+ Pythia::next(): 319000 events have been generated 
+Processed 320000 / 1000000 events, accepted 320000
+
+ Pythia::next(): 320000 events have been generated 
+
+ Pythia::next(): 321000 events have been generated 
+
+ Pythia::next(): 322000 events have been generated 
+
+ Pythia::next(): 323000 events have been generated 
+
+ Pythia::next(): 324000 events have been generated 
+
+ Pythia::next(): 325000 events have been generated 
+
+ Pythia::next(): 326000 events have been generated 
+
+ Pythia::next(): 327000 events have been generated 
+
+ Pythia::next(): 328000 events have been generated 
+
+ Pythia::next(): 329000 events have been generated 
+Processed 330000 / 1000000 events, accepted 330000
+
+ Pythia::next(): 330000 events have been generated 
+
+ Pythia::next(): 331000 events have been generated 
+
+ Pythia::next(): 332000 events have been generated 
+
+ Pythia::next(): 333000 events have been generated 
+
+ Pythia::next(): 334000 events have been generated 
+
+ Pythia::next(): 335000 events have been generated 
+
+ Pythia::next(): 336000 events have been generated 
+
+ Pythia::next(): 337000 events have been generated 
+
+ Pythia::next(): 338000 events have been generated 
+
+ Pythia::next(): 339000 events have been generated 
+Processed 340000 / 1000000 events, accepted 340000
+
+ Pythia::next(): 340000 events have been generated 
+
+ Pythia::next(): 341000 events have been generated 
+
+ Pythia::next(): 342000 events have been generated 
+
+ Pythia::next(): 343000 events have been generated 
+
+ Pythia::next(): 344000 events have been generated 
+
+ Pythia::next(): 345000 events have been generated 
+
+ Pythia::next(): 346000 events have been generated 
+
+ Pythia::next(): 347000 events have been generated 
+
+ Pythia::next(): 348000 events have been generated 
+
+ Pythia::next(): 349000 events have been generated 
+Processed 350000 / 1000000 events, accepted 350000
+
+ Pythia::next(): 350000 events have been generated 
+
+ Pythia::next(): 351000 events have been generated 
+
+ Pythia::next(): 352000 events have been generated 
+
+ Pythia::next(): 353000 events have been generated 
+
+ Pythia::next(): 354000 events have been generated 
+
+ Pythia::next(): 355000 events have been generated 
+
+ Pythia::next(): 356000 events have been generated 
+
+ Pythia::next(): 357000 events have been generated 
+
+ Pythia::next(): 358000 events have been generated 
+
+ Pythia::next(): 359000 events have been generated 
+Processed 360000 / 1000000 events, accepted 360000
+
+ Pythia::next(): 360000 events have been generated 
+
+ Pythia::next(): 361000 events have been generated 
+
+ Pythia::next(): 362000 events have been generated 
+
+ Pythia::next(): 363000 events have been generated 
+
+ Pythia::next(): 364000 events have been generated 
+
+ Pythia::next(): 365000 events have been generated 
+
+ Pythia::next(): 366000 events have been generated 
+
+ Pythia::next(): 367000 events have been generated 
+
+ Pythia::next(): 368000 events have been generated 
+
+ Pythia::next(): 369000 events have been generated 
+Processed 370000 / 1000000 events, accepted 370000
+
+ Pythia::next(): 370000 events have been generated 
+
+ Pythia::next(): 371000 events have been generated 
+
+ Pythia::next(): 372000 events have been generated 
+
+ Pythia::next(): 373000 events have been generated 
+
+ Pythia::next(): 374000 events have been generated 
+
+ Pythia::next(): 375000 events have been generated 
+
+ Pythia::next(): 376000 events have been generated 
+
+ Pythia::next(): 377000 events have been generated 
+
+ Pythia::next(): 378000 events have been generated 
+
+ Pythia::next(): 379000 events have been generated 
+Processed 380000 / 1000000 events, accepted 380000
+
+ Pythia::next(): 380000 events have been generated 
+
+ Pythia::next(): 381000 events have been generated 
+
+ Pythia::next(): 382000 events have been generated 
+
+ Pythia::next(): 383000 events have been generated 
+
+ Pythia::next(): 384000 events have been generated 
+
+ Pythia::next(): 385000 events have been generated 
+
+ Pythia::next(): 386000 events have been generated 
+
+ Pythia::next(): 387000 events have been generated 
+
+ Pythia::next(): 388000 events have been generated 
+
+ Pythia::next(): 389000 events have been generated 
+Processed 390000 / 1000000 events, accepted 390000
+
+ Pythia::next(): 390000 events have been generated 
+
+ Pythia::next(): 391000 events have been generated 
+
+ Pythia::next(): 392000 events have been generated 
+
+ Pythia::next(): 393000 events have been generated 
+
+ Pythia::next(): 394000 events have been generated 
+
+ Pythia::next(): 395000 events have been generated 
+
+ Pythia::next(): 396000 events have been generated 
+
+ Pythia::next(): 397000 events have been generated 
+
+ Pythia::next(): 398000 events have been generated 
+
+ Pythia::next(): 399000 events have been generated 
+Processed 400000 / 1000000 events, accepted 400000
+
+ Pythia::next(): 400000 events have been generated 
+
+ Pythia::next(): 401000 events have been generated 
+
+ Pythia::next(): 402000 events have been generated 
+
+ Pythia::next(): 403000 events have been generated 
+
+ Pythia::next(): 404000 events have been generated 
+
+ Pythia::next(): 405000 events have been generated 
+
+ Pythia::next(): 406000 events have been generated 
+
+ Pythia::next(): 407000 events have been generated 
+
+ Pythia::next(): 408000 events have been generated 
+
+ Pythia::next(): 409000 events have been generated 
+Processed 410000 / 1000000 events, accepted 410000
+
+ Pythia::next(): 410000 events have been generated 
+
+ Pythia::next(): 411000 events have been generated 
+
+ Pythia::next(): 412000 events have been generated 
+
+ Pythia::next(): 413000 events have been generated 
+
+ Pythia::next(): 414000 events have been generated 
+
+ Pythia::next(): 415000 events have been generated 
+
+ Pythia::next(): 416000 events have been generated 
+
+ Pythia::next(): 417000 events have been generated 
+
+ Pythia::next(): 418000 events have been generated 
+
+ Pythia::next(): 419000 events have been generated 
+Processed 420000 / 1000000 events, accepted 420000
+
+ Pythia::next(): 420000 events have been generated 
+
+ Pythia::next(): 421000 events have been generated 
+
+ Pythia::next(): 422000 events have been generated 
+
+ Pythia::next(): 423000 events have been generated 
+
+ Pythia::next(): 424000 events have been generated 
+
+ Pythia::next(): 425000 events have been generated 
+
+ Pythia::next(): 426000 events have been generated 
+
+ Pythia::next(): 427000 events have been generated 
+
+ Pythia::next(): 428000 events have been generated 
+
+ Pythia::next(): 429000 events have been generated 
+Processed 430000 / 1000000 events, accepted 430000
+
+ Pythia::next(): 430000 events have been generated 
+
+ Pythia::next(): 431000 events have been generated 
+
+ Pythia::next(): 432000 events have been generated 
+
+ Pythia::next(): 433000 events have been generated 
+
+ Pythia::next(): 434000 events have been generated 
+
+ Pythia::next(): 435000 events have been generated 
+
+ Pythia::next(): 436000 events have been generated 
+
+ Pythia::next(): 437000 events have been generated 
+
+ Pythia::next(): 438000 events have been generated 
+ PYTHIA Warning in TauDecays::decay: maximum decay weight exceeded in tau decay
+
+ Pythia::next(): 439000 events have been generated 
+Processed 440000 / 1000000 events, accepted 440000
+
+ Pythia::next(): 440000 events have been generated 
+
+ Pythia::next(): 441000 events have been generated 
+
+ Pythia::next(): 442000 events have been generated 
+
+ Pythia::next(): 443000 events have been generated 
+
+ Pythia::next(): 444000 events have been generated 
+
+ Pythia::next(): 445000 events have been generated 
+
+ Pythia::next(): 446000 events have been generated 
+
+ Pythia::next(): 447000 events have been generated 
+
+ Pythia::next(): 448000 events have been generated 
+
+ Pythia::next(): 449000 events have been generated 
+Processed 450000 / 1000000 events, accepted 450000
+
+ Pythia::next(): 450000 events have been generated 
+
+ Pythia::next(): 451000 events have been generated 
+
+ Pythia::next(): 452000 events have been generated 
+
+ Pythia::next(): 453000 events have been generated 
+
+ Pythia::next(): 454000 events have been generated 
+
+ Pythia::next(): 455000 events have been generated 
+
+ Pythia::next(): 456000 events have been generated 
+
+ Pythia::next(): 457000 events have been generated 
+
+ Pythia::next(): 458000 events have been generated 
+
+ Pythia::next(): 459000 events have been generated 
+Processed 460000 / 1000000 events, accepted 460000
+
+ Pythia::next(): 460000 events have been generated 
+
+ Pythia::next(): 461000 events have been generated 
+
+ Pythia::next(): 462000 events have been generated 
+
+ Pythia::next(): 463000 events have been generated 
+
+ Pythia::next(): 464000 events have been generated 
+
+ Pythia::next(): 465000 events have been generated 
+
+ Pythia::next(): 466000 events have been generated 
+
+ Pythia::next(): 467000 events have been generated 
+
+ Pythia::next(): 468000 events have been generated 
+
+ Pythia::next(): 469000 events have been generated 
+Processed 470000 / 1000000 events, accepted 470000
+
+ Pythia::next(): 470000 events have been generated 
+
+ Pythia::next(): 471000 events have been generated 
+
+ Pythia::next(): 472000 events have been generated 
+
+ Pythia::next(): 473000 events have been generated 
+
+ Pythia::next(): 474000 events have been generated 
+
+ Pythia::next(): 475000 events have been generated 
+
+ Pythia::next(): 476000 events have been generated 
+
+ Pythia::next(): 477000 events have been generated 
+
+ Pythia::next(): 478000 events have been generated 
+
+ Pythia::next(): 479000 events have been generated 
+Processed 480000 / 1000000 events, accepted 480000
+
+ Pythia::next(): 480000 events have been generated 
+
+ Pythia::next(): 481000 events have been generated 
+
+ Pythia::next(): 482000 events have been generated 
+
+ Pythia::next(): 483000 events have been generated 
+
+ Pythia::next(): 484000 events have been generated 
+
+ Pythia::next(): 485000 events have been generated 
+
+ Pythia::next(): 486000 events have been generated 
+
+ Pythia::next(): 487000 events have been generated 
+
+ Pythia::next(): 488000 events have been generated 
+
+ Pythia::next(): 489000 events have been generated 
+Processed 490000 / 1000000 events, accepted 490000
+
+ Pythia::next(): 490000 events have been generated 
+
+ Pythia::next(): 491000 events have been generated 
+
+ Pythia::next(): 492000 events have been generated 
+
+ Pythia::next(): 493000 events have been generated 
+
+ Pythia::next(): 494000 events have been generated 
+
+ Pythia::next(): 495000 events have been generated 
+
+ Pythia::next(): 496000 events have been generated 
+
+ Pythia::next(): 497000 events have been generated 
+
+ Pythia::next(): 498000 events have been generated 
+
+ Pythia::next(): 499000 events have been generated 
+Processed 500000 / 1000000 events, accepted 500000
+
+ Pythia::next(): 500000 events have been generated 
+
+ Pythia::next(): 501000 events have been generated 
+
+ Pythia::next(): 502000 events have been generated 
+
+ Pythia::next(): 503000 events have been generated 
+
+ Pythia::next(): 504000 events have been generated 
+
+ Pythia::next(): 505000 events have been generated 
+
+ Pythia::next(): 506000 events have been generated 
+
+ Pythia::next(): 507000 events have been generated 
+
+ Pythia::next(): 508000 events have been generated 
+
+ Pythia::next(): 509000 events have been generated 
+Processed 510000 / 1000000 events, accepted 510000
+
+ Pythia::next(): 510000 events have been generated 
+
+ Pythia::next(): 511000 events have been generated 
+
+ Pythia::next(): 512000 events have been generated 
+
+ Pythia::next(): 513000 events have been generated 
+
+ Pythia::next(): 514000 events have been generated 
+
+ Pythia::next(): 515000 events have been generated 
+
+ Pythia::next(): 516000 events have been generated 
+
+ Pythia::next(): 517000 events have been generated 
+
+ Pythia::next(): 518000 events have been generated 
+
+ Pythia::next(): 519000 events have been generated 
+Processed 520000 / 1000000 events, accepted 520000
+
+ Pythia::next(): 520000 events have been generated 
+
+ Pythia::next(): 521000 events have been generated 
+
+ Pythia::next(): 522000 events have been generated 
+
+ Pythia::next(): 523000 events have been generated 
+
+ Pythia::next(): 524000 events have been generated 
+
+ Pythia::next(): 525000 events have been generated 
+
+ Pythia::next(): 526000 events have been generated 
+
+ Pythia::next(): 527000 events have been generated 
+
+ Pythia::next(): 528000 events have been generated 
+
+ Pythia::next(): 529000 events have been generated 
+Processed 530000 / 1000000 events, accepted 530000
+
+ Pythia::next(): 530000 events have been generated 
+
+ Pythia::next(): 531000 events have been generated 
+
+ Pythia::next(): 532000 events have been generated 
+
+ Pythia::next(): 533000 events have been generated 
+
+ Pythia::next(): 534000 events have been generated 
+
+ Pythia::next(): 535000 events have been generated 
+
+ Pythia::next(): 536000 events have been generated 
+
+ Pythia::next(): 537000 events have been generated 
+
+ Pythia::next(): 538000 events have been generated 
+
+ Pythia::next(): 539000 events have been generated 
+Processed 540000 / 1000000 events, accepted 540000
+
+ Pythia::next(): 540000 events have been generated 
+
+ Pythia::next(): 541000 events have been generated 
+
+ Pythia::next(): 542000 events have been generated 
+
+ Pythia::next(): 543000 events have been generated 
+
+ Pythia::next(): 544000 events have been generated 
+
+ Pythia::next(): 545000 events have been generated 
+
+ Pythia::next(): 546000 events have been generated 
+
+ Pythia::next(): 547000 events have been generated 
+
+ Pythia::next(): 548000 events have been generated 
+
+ Pythia::next(): 549000 events have been generated 
+Processed 550000 / 1000000 events, accepted 550000
+
+ Pythia::next(): 550000 events have been generated 
+
+ Pythia::next(): 551000 events have been generated 
+
+ Pythia::next(): 552000 events have been generated 
+
+ Pythia::next(): 553000 events have been generated 
+
+ Pythia::next(): 554000 events have been generated 
+
+ Pythia::next(): 555000 events have been generated 
+
+ Pythia::next(): 556000 events have been generated 
+
+ Pythia::next(): 557000 events have been generated 
+
+ Pythia::next(): 558000 events have been generated 
+
+ Pythia::next(): 559000 events have been generated 
+Processed 560000 / 1000000 events, accepted 560000
+
+ Pythia::next(): 560000 events have been generated 
+
+ Pythia::next(): 561000 events have been generated 
+
+ Pythia::next(): 562000 events have been generated 
+
+ Pythia::next(): 563000 events have been generated 
+
+ Pythia::next(): 564000 events have been generated 
+
+ Pythia::next(): 565000 events have been generated 
+
+ Pythia::next(): 566000 events have been generated 
+
+ Pythia::next(): 567000 events have been generated 
+
+ Pythia::next(): 568000 events have been generated 
+
+ Pythia::next(): 569000 events have been generated 
+Processed 570000 / 1000000 events, accepted 570000
+
+ Pythia::next(): 570000 events have been generated 
+
+ Pythia::next(): 571000 events have been generated 
+
+ Pythia::next(): 572000 events have been generated 
+
+ Pythia::next(): 573000 events have been generated 
+
+ Pythia::next(): 574000 events have been generated 
+
+ Pythia::next(): 575000 events have been generated 
+
+ Pythia::next(): 576000 events have been generated 
+
+ Pythia::next(): 577000 events have been generated 
+
+ Pythia::next(): 578000 events have been generated 
+
+ Pythia::next(): 579000 events have been generated 
+Processed 580000 / 1000000 events, accepted 580000
+
+ Pythia::next(): 580000 events have been generated 
+
+ Pythia::next(): 581000 events have been generated 
+
+ Pythia::next(): 582000 events have been generated 
+
+ Pythia::next(): 583000 events have been generated 
+
+ Pythia::next(): 584000 events have been generated 
+
+ Pythia::next(): 585000 events have been generated 
+
+ Pythia::next(): 586000 events have been generated 
+
+ Pythia::next(): 587000 events have been generated 
+
+ Pythia::next(): 588000 events have been generated 
+
+ Pythia::next(): 589000 events have been generated 
+Processed 590000 / 1000000 events, accepted 590000
+
+ Pythia::next(): 590000 events have been generated 
+
+ Pythia::next(): 591000 events have been generated 
+
+ Pythia::next(): 592000 events have been generated 
+
+ Pythia::next(): 593000 events have been generated 
+
+ Pythia::next(): 594000 events have been generated 
+
+ Pythia::next(): 595000 events have been generated 
+
+ Pythia::next(): 596000 events have been generated 
+
+ Pythia::next(): 597000 events have been generated 
+
+ Pythia::next(): 598000 events have been generated 
+
+ Pythia::next(): 599000 events have been generated 
+Processed 600000 / 1000000 events, accepted 600000
+
+ Pythia::next(): 600000 events have been generated 
+
+ Pythia::next(): 601000 events have been generated 
+
+ Pythia::next(): 602000 events have been generated 
+
+ Pythia::next(): 603000 events have been generated 
+
+ Pythia::next(): 604000 events have been generated 
+
+ Pythia::next(): 605000 events have been generated 
+
+ Pythia::next(): 606000 events have been generated 
+
+ Pythia::next(): 607000 events have been generated 
+
+ Pythia::next(): 608000 events have been generated 
+
+ Pythia::next(): 609000 events have been generated 
+Processed 610000 / 1000000 events, accepted 610000
+
+ Pythia::next(): 610000 events have been generated 
+
+ Pythia::next(): 611000 events have been generated 
+
+ Pythia::next(): 612000 events have been generated 
+
+ Pythia::next(): 613000 events have been generated 
+
+ Pythia::next(): 614000 events have been generated 
+
+ Pythia::next(): 615000 events have been generated 
+
+ Pythia::next(): 616000 events have been generated 
+
+ Pythia::next(): 617000 events have been generated 
+
+ Pythia::next(): 618000 events have been generated 
+
+ Pythia::next(): 619000 events have been generated 
+Processed 620000 / 1000000 events, accepted 620000
+
+ Pythia::next(): 620000 events have been generated 
+
+ Pythia::next(): 621000 events have been generated 
+
+ Pythia::next(): 622000 events have been generated 
+
+ Pythia::next(): 623000 events have been generated 
+
+ Pythia::next(): 624000 events have been generated 
+
+ Pythia::next(): 625000 events have been generated 
+
+ Pythia::next(): 626000 events have been generated 
+
+ Pythia::next(): 627000 events have been generated 
+
+ Pythia::next(): 628000 events have been generated 
+
+ Pythia::next(): 629000 events have been generated 
+Processed 630000 / 1000000 events, accepted 630000
+
+ Pythia::next(): 630000 events have been generated 
+
+ Pythia::next(): 631000 events have been generated 
+
+ Pythia::next(): 632000 events have been generated 
+
+ Pythia::next(): 633000 events have been generated 
+
+ Pythia::next(): 634000 events have been generated 
+
+ Pythia::next(): 635000 events have been generated 
+
+ Pythia::next(): 636000 events have been generated 
+
+ Pythia::next(): 637000 events have been generated 
+
+ Pythia::next(): 638000 events have been generated 
+
+ Pythia::next(): 639000 events have been generated 
+Processed 640000 / 1000000 events, accepted 640000
+
+ Pythia::next(): 640000 events have been generated 
+
+ Pythia::next(): 641000 events have been generated 
+
+ Pythia::next(): 642000 events have been generated 
+
+ Pythia::next(): 643000 events have been generated 
+
+ Pythia::next(): 644000 events have been generated 
+
+ Pythia::next(): 645000 events have been generated 
+
+ Pythia::next(): 646000 events have been generated 
+
+ Pythia::next(): 647000 events have been generated 
+
+ Pythia::next(): 648000 events have been generated 
+
+ Pythia::next(): 649000 events have been generated 
+Processed 650000 / 1000000 events, accepted 650000
+
+ Pythia::next(): 650000 events have been generated 
+
+ Pythia::next(): 651000 events have been generated 
+
+ Pythia::next(): 652000 events have been generated 
+
+ Pythia::next(): 653000 events have been generated 
+
+ Pythia::next(): 654000 events have been generated 
+
+ Pythia::next(): 655000 events have been generated 
+
+ Pythia::next(): 656000 events have been generated 
+
+ Pythia::next(): 657000 events have been generated 
+
+ Pythia::next(): 658000 events have been generated 
+
+ Pythia::next(): 659000 events have been generated 
+Processed 660000 / 1000000 events, accepted 660000
+
+ Pythia::next(): 660000 events have been generated 
+
+ Pythia::next(): 661000 events have been generated 
+
+ Pythia::next(): 662000 events have been generated 
+
+ Pythia::next(): 663000 events have been generated 
+
+ Pythia::next(): 664000 events have been generated 
+
+ Pythia::next(): 665000 events have been generated 
+
+ Pythia::next(): 666000 events have been generated 
+
+ Pythia::next(): 667000 events have been generated 
+
+ Pythia::next(): 668000 events have been generated 
+
+ Pythia::next(): 669000 events have been generated 
+Processed 670000 / 1000000 events, accepted 670000
+
+ Pythia::next(): 670000 events have been generated 
+
+ Pythia::next(): 671000 events have been generated 
+
+ Pythia::next(): 672000 events have been generated 
+
+ Pythia::next(): 673000 events have been generated 
+
+ Pythia::next(): 674000 events have been generated 
+
+ Pythia::next(): 675000 events have been generated 
+
+ Pythia::next(): 676000 events have been generated 
+
+ Pythia::next(): 677000 events have been generated 
+
+ Pythia::next(): 678000 events have been generated 
+
+ Pythia::next(): 679000 events have been generated 
+Processed 680000 / 1000000 events, accepted 680000
+
+ Pythia::next(): 680000 events have been generated 
+
+ Pythia::next(): 681000 events have been generated 
+
+ Pythia::next(): 682000 events have been generated 
+
+ Pythia::next(): 683000 events have been generated 
+
+ Pythia::next(): 684000 events have been generated 
+
+ Pythia::next(): 685000 events have been generated 
+
+ Pythia::next(): 686000 events have been generated 
+
+ Pythia::next(): 687000 events have been generated 
+
+ Pythia::next(): 688000 events have been generated 
+
+ Pythia::next(): 689000 events have been generated 
+Processed 690000 / 1000000 events, accepted 690000
+
+ Pythia::next(): 690000 events have been generated 
+
+ Pythia::next(): 691000 events have been generated 
+
+ Pythia::next(): 692000 events have been generated 
+
+ Pythia::next(): 693000 events have been generated 
+
+ Pythia::next(): 694000 events have been generated 
+
+ Pythia::next(): 695000 events have been generated 
+
+ Pythia::next(): 696000 events have been generated 
+
+ Pythia::next(): 697000 events have been generated 
+
+ Pythia::next(): 698000 events have been generated 
+
+ Pythia::next(): 699000 events have been generated 
+Processed 700000 / 1000000 events, accepted 700000
+
+ Pythia::next(): 700000 events have been generated 
+
+ Pythia::next(): 701000 events have been generated 
+
+ Pythia::next(): 702000 events have been generated 
+
+ Pythia::next(): 703000 events have been generated 
+
+ Pythia::next(): 704000 events have been generated 
+
+ Pythia::next(): 705000 events have been generated 
+
+ Pythia::next(): 706000 events have been generated 
+
+ Pythia::next(): 707000 events have been generated 
+
+ Pythia::next(): 708000 events have been generated 
+
+ Pythia::next(): 709000 events have been generated 
+Processed 710000 / 1000000 events, accepted 710000
+
+ Pythia::next(): 710000 events have been generated 
+
+ Pythia::next(): 711000 events have been generated 
+
+ Pythia::next(): 712000 events have been generated 
+
+ Pythia::next(): 713000 events have been generated 
+
+ Pythia::next(): 714000 events have been generated 
+
+ Pythia::next(): 715000 events have been generated 
+
+ Pythia::next(): 716000 events have been generated 
+
+ Pythia::next(): 717000 events have been generated 
+
+ Pythia::next(): 718000 events have been generated 
+
+ Pythia::next(): 719000 events have been generated 
+Processed 720000 / 1000000 events, accepted 720000
+
+ Pythia::next(): 720000 events have been generated 
+
+ Pythia::next(): 721000 events have been generated 
+
+ Pythia::next(): 722000 events have been generated 
+
+ Pythia::next(): 723000 events have been generated 
+
+ Pythia::next(): 724000 events have been generated 
+
+ Pythia::next(): 725000 events have been generated 
+
+ Pythia::next(): 726000 events have been generated 
+
+ Pythia::next(): 727000 events have been generated 
+
+ Pythia::next(): 728000 events have been generated 
+
+ Pythia::next(): 729000 events have been generated 
+Processed 730000 / 1000000 events, accepted 730000
+
+ Pythia::next(): 730000 events have been generated 
+
+ Pythia::next(): 731000 events have been generated 
+
+ Pythia::next(): 732000 events have been generated 
+
+ Pythia::next(): 733000 events have been generated 
+
+ Pythia::next(): 734000 events have been generated 
+
+ Pythia::next(): 735000 events have been generated 
+
+ Pythia::next(): 736000 events have been generated 
+
+ Pythia::next(): 737000 events have been generated 
+
+ Pythia::next(): 738000 events have been generated 
+
+ Pythia::next(): 739000 events have been generated 
+Processed 740000 / 1000000 events, accepted 740000
+
+ Pythia::next(): 740000 events have been generated 
+
+ Pythia::next(): 741000 events have been generated 
+
+ Pythia::next(): 742000 events have been generated 
+
+ Pythia::next(): 743000 events have been generated 
+
+ Pythia::next(): 744000 events have been generated 
+
+ Pythia::next(): 745000 events have been generated 
+
+ Pythia::next(): 746000 events have been generated 
+
+ Pythia::next(): 747000 events have been generated 
+
+ Pythia::next(): 748000 events have been generated 
+
+ Pythia::next(): 749000 events have been generated 
+Processed 750000 / 1000000 events, accepted 750000
+
+ Pythia::next(): 750000 events have been generated 
+
+ Pythia::next(): 751000 events have been generated 
+
+ Pythia::next(): 752000 events have been generated 
+
+ Pythia::next(): 753000 events have been generated 
+
+ Pythia::next(): 754000 events have been generated 
+
+ Pythia::next(): 755000 events have been generated 
+
+ Pythia::next(): 756000 events have been generated 
+
+ Pythia::next(): 757000 events have been generated 
+
+ Pythia::next(): 758000 events have been generated 
+
+ Pythia::next(): 759000 events have been generated 
+Processed 760000 / 1000000 events, accepted 760000
+
+ Pythia::next(): 760000 events have been generated 
+
+ Pythia::next(): 761000 events have been generated 
+
+ Pythia::next(): 762000 events have been generated 
+
+ Pythia::next(): 763000 events have been generated 
+
+ Pythia::next(): 764000 events have been generated 
+
+ Pythia::next(): 765000 events have been generated 
+
+ Pythia::next(): 766000 events have been generated 
+
+ Pythia::next(): 767000 events have been generated 
+
+ Pythia::next(): 768000 events have been generated 
+
+ Pythia::next(): 769000 events have been generated 
+Processed 770000 / 1000000 events, accepted 770000
+
+ Pythia::next(): 770000 events have been generated 
+
+ Pythia::next(): 771000 events have been generated 
+
+ Pythia::next(): 772000 events have been generated 
+
+ Pythia::next(): 773000 events have been generated 
+
+ Pythia::next(): 774000 events have been generated 
+
+ Pythia::next(): 775000 events have been generated 
+
+ Pythia::next(): 776000 events have been generated 
+
+ Pythia::next(): 777000 events have been generated 
+
+ Pythia::next(): 778000 events have been generated 
+
+ Pythia::next(): 779000 events have been generated 
+Processed 780000 / 1000000 events, accepted 780000
+
+ Pythia::next(): 780000 events have been generated 
+
+ Pythia::next(): 781000 events have been generated 
+
+ Pythia::next(): 782000 events have been generated 
+
+ Pythia::next(): 783000 events have been generated 
+
+ Pythia::next(): 784000 events have been generated 
+
+ Pythia::next(): 785000 events have been generated 
+
+ Pythia::next(): 786000 events have been generated 
+
+ Pythia::next(): 787000 events have been generated 
+
+ Pythia::next(): 788000 events have been generated 
+
+ Pythia::next(): 789000 events have been generated 
+Processed 790000 / 1000000 events, accepted 790000
+
+ Pythia::next(): 790000 events have been generated 
+
+ Pythia::next(): 791000 events have been generated 
+
+ Pythia::next(): 792000 events have been generated 
+
+ Pythia::next(): 793000 events have been generated 
+
+ Pythia::next(): 794000 events have been generated 
+
+ Pythia::next(): 795000 events have been generated 
+
+ Pythia::next(): 796000 events have been generated 
+
+ Pythia::next(): 797000 events have been generated 
+
+ Pythia::next(): 798000 events have been generated 
+
+ Pythia::next(): 799000 events have been generated 
+Processed 800000 / 1000000 events, accepted 800000
+
+ Pythia::next(): 800000 events have been generated 
+
+ Pythia::next(): 801000 events have been generated 
+
+ Pythia::next(): 802000 events have been generated 
+
+ Pythia::next(): 803000 events have been generated 
+
+ Pythia::next(): 804000 events have been generated 
+
+ Pythia::next(): 805000 events have been generated 
+
+ Pythia::next(): 806000 events have been generated 
+
+ Pythia::next(): 807000 events have been generated 
+
+ Pythia::next(): 808000 events have been generated 
+
+ Pythia::next(): 809000 events have been generated 
+Processed 810000 / 1000000 events, accepted 810000
+
+ Pythia::next(): 810000 events have been generated 
+
+ Pythia::next(): 811000 events have been generated 
+
+ Pythia::next(): 812000 events have been generated 
+
+ Pythia::next(): 813000 events have been generated 
+
+ Pythia::next(): 814000 events have been generated 
+
+ Pythia::next(): 815000 events have been generated 
+
+ Pythia::next(): 816000 events have been generated 
+
+ Pythia::next(): 817000 events have been generated 
+
+ Pythia::next(): 818000 events have been generated 
+
+ Pythia::next(): 819000 events have been generated 
+Processed 820000 / 1000000 events, accepted 820000
+
+ Pythia::next(): 820000 events have been generated 
+
+ Pythia::next(): 821000 events have been generated 
+
+ Pythia::next(): 822000 events have been generated 
+
+ Pythia::next(): 823000 events have been generated 
+
+ Pythia::next(): 824000 events have been generated 
+
+ Pythia::next(): 825000 events have been generated 
+
+ Pythia::next(): 826000 events have been generated 
+
+ Pythia::next(): 827000 events have been generated 
+
+ Pythia::next(): 828000 events have been generated 
+
+ Pythia::next(): 829000 events have been generated 
+Processed 830000 / 1000000 events, accepted 830000
+
+ Pythia::next(): 830000 events have been generated 
+
+ Pythia::next(): 831000 events have been generated 
+
+ Pythia::next(): 832000 events have been generated 
+
+ Pythia::next(): 833000 events have been generated 
+
+ Pythia::next(): 834000 events have been generated 
+
+ Pythia::next(): 835000 events have been generated 
+
+ Pythia::next(): 836000 events have been generated 
+
+ Pythia::next(): 837000 events have been generated 
+
+ Pythia::next(): 838000 events have been generated 
+
+ Pythia::next(): 839000 events have been generated 
+Processed 840000 / 1000000 events, accepted 840000
+
+ Pythia::next(): 840000 events have been generated 
+
+ Pythia::next(): 841000 events have been generated 
+
+ Pythia::next(): 842000 events have been generated 
+
+ Pythia::next(): 843000 events have been generated 
+
+ Pythia::next(): 844000 events have been generated 
+
+ Pythia::next(): 845000 events have been generated 
+
+ Pythia::next(): 846000 events have been generated 
+
+ Pythia::next(): 847000 events have been generated 
+
+ Pythia::next(): 848000 events have been generated 
+
+ Pythia::next(): 849000 events have been generated 
+Processed 850000 / 1000000 events, accepted 850000
+
+ Pythia::next(): 850000 events have been generated 
+
+ Pythia::next(): 851000 events have been generated 
+
+ Pythia::next(): 852000 events have been generated 
+
+ Pythia::next(): 853000 events have been generated 
+
+ Pythia::next(): 854000 events have been generated 
+
+ Pythia::next(): 855000 events have been generated 
+
+ Pythia::next(): 856000 events have been generated 
+
+ Pythia::next(): 857000 events have been generated 
+
+ Pythia::next(): 858000 events have been generated 
+
+ Pythia::next(): 859000 events have been generated 
+Processed 860000 / 1000000 events, accepted 860000
+
+ Pythia::next(): 860000 events have been generated 
+
+ Pythia::next(): 861000 events have been generated 
+
+ Pythia::next(): 862000 events have been generated 
+
+ Pythia::next(): 863000 events have been generated 
+
+ Pythia::next(): 864000 events have been generated 
+
+ Pythia::next(): 865000 events have been generated 
+
+ Pythia::next(): 866000 events have been generated 
+
+ Pythia::next(): 867000 events have been generated 
+
+ Pythia::next(): 868000 events have been generated 
+
+ Pythia::next(): 869000 events have been generated 
+Processed 870000 / 1000000 events, accepted 870000
+
+ Pythia::next(): 870000 events have been generated 
+
+ Pythia::next(): 871000 events have been generated 
+
+ Pythia::next(): 872000 events have been generated 
+
+ Pythia::next(): 873000 events have been generated 
+
+ Pythia::next(): 874000 events have been generated 
+
+ Pythia::next(): 875000 events have been generated 
+
+ Pythia::next(): 876000 events have been generated 
+
+ Pythia::next(): 877000 events have been generated 
+
+ Pythia::next(): 878000 events have been generated 
+
+ Pythia::next(): 879000 events have been generated 
+Processed 880000 / 1000000 events, accepted 880000
+
+ Pythia::next(): 880000 events have been generated 
+
+ Pythia::next(): 881000 events have been generated 
+
+ Pythia::next(): 882000 events have been generated 
+
+ Pythia::next(): 883000 events have been generated 
+
+ Pythia::next(): 884000 events have been generated 
+
+ Pythia::next(): 885000 events have been generated 
+
+ Pythia::next(): 886000 events have been generated 
+
+ Pythia::next(): 887000 events have been generated 
+
+ Pythia::next(): 888000 events have been generated 
+
+ Pythia::next(): 889000 events have been generated 
+Processed 890000 / 1000000 events, accepted 890000
+
+ Pythia::next(): 890000 events have been generated 
+
+ Pythia::next(): 891000 events have been generated 
+
+ Pythia::next(): 892000 events have been generated 
+
+ Pythia::next(): 893000 events have been generated 
+
+ Pythia::next(): 894000 events have been generated 
+
+ Pythia::next(): 895000 events have been generated 
+
+ Pythia::next(): 896000 events have been generated 
+
+ Pythia::next(): 897000 events have been generated 
+
+ Pythia::next(): 898000 events have been generated 
+
+ Pythia::next(): 899000 events have been generated 
+Processed 900000 / 1000000 events, accepted 900000
+
+ Pythia::next(): 900000 events have been generated 
+
+ Pythia::next(): 901000 events have been generated 
+
+ Pythia::next(): 902000 events have been generated 
+
+ Pythia::next(): 903000 events have been generated 
+
+ Pythia::next(): 904000 events have been generated 
+
+ Pythia::next(): 905000 events have been generated 
+
+ Pythia::next(): 906000 events have been generated 
+
+ Pythia::next(): 907000 events have been generated 
+
+ Pythia::next(): 908000 events have been generated 
+
+ Pythia::next(): 909000 events have been generated 
+Processed 910000 / 1000000 events, accepted 910000
+
+ Pythia::next(): 910000 events have been generated 
+
+ Pythia::next(): 911000 events have been generated 
+
+ Pythia::next(): 912000 events have been generated 
+
+ Pythia::next(): 913000 events have been generated 
+
+ Pythia::next(): 914000 events have been generated 
+
+ Pythia::next(): 915000 events have been generated 
+
+ Pythia::next(): 916000 events have been generated 
+
+ Pythia::next(): 917000 events have been generated 
+
+ Pythia::next(): 918000 events have been generated 
+
+ Pythia::next(): 919000 events have been generated 
+Processed 920000 / 1000000 events, accepted 920000
+
+ Pythia::next(): 920000 events have been generated 
+
+ Pythia::next(): 921000 events have been generated 
+
+ Pythia::next(): 922000 events have been generated 
+
+ Pythia::next(): 923000 events have been generated 
+
+ Pythia::next(): 924000 events have been generated 
+
+ Pythia::next(): 925000 events have been generated 
+
+ Pythia::next(): 926000 events have been generated 
+
+ Pythia::next(): 927000 events have been generated 
+
+ Pythia::next(): 928000 events have been generated 
+
+ Pythia::next(): 929000 events have been generated 
+Processed 930000 / 1000000 events, accepted 930000
+
+ Pythia::next(): 930000 events have been generated 
+
+ Pythia::next(): 931000 events have been generated 
+
+ Pythia::next(): 932000 events have been generated 
+
+ Pythia::next(): 933000 events have been generated 
+
+ Pythia::next(): 934000 events have been generated 
+
+ Pythia::next(): 935000 events have been generated 
+
+ Pythia::next(): 936000 events have been generated 
+
+ Pythia::next(): 937000 events have been generated 
+
+ Pythia::next(): 938000 events have been generated 
+
+ Pythia::next(): 939000 events have been generated 
+Processed 940000 / 1000000 events, accepted 940000
+
+ Pythia::next(): 940000 events have been generated 
+
+ Pythia::next(): 941000 events have been generated 
+
+ Pythia::next(): 942000 events have been generated 
+
+ Pythia::next(): 943000 events have been generated 
+
+ Pythia::next(): 944000 events have been generated 
+
+ Pythia::next(): 945000 events have been generated 
+
+ Pythia::next(): 946000 events have been generated 
+
+ Pythia::next(): 947000 events have been generated 
+
+ Pythia::next(): 948000 events have been generated 
+
+ Pythia::next(): 949000 events have been generated 
+Processed 950000 / 1000000 events, accepted 950000
+
+ Pythia::next(): 950000 events have been generated 
+
+ Pythia::next(): 951000 events have been generated 
+
+ Pythia::next(): 952000 events have been generated 
+
+ Pythia::next(): 953000 events have been generated 
+
+ Pythia::next(): 954000 events have been generated 
+
+ Pythia::next(): 955000 events have been generated 
+
+ Pythia::next(): 956000 events have been generated 
+
+ Pythia::next(): 957000 events have been generated 
+
+ Pythia::next(): 958000 events have been generated 
+
+ Pythia::next(): 959000 events have been generated 
+Processed 960000 / 1000000 events, accepted 960000
+
+ Pythia::next(): 960000 events have been generated 
+
+ Pythia::next(): 961000 events have been generated 
+
+ Pythia::next(): 962000 events have been generated 
+
+ Pythia::next(): 963000 events have been generated 
+
+ Pythia::next(): 964000 events have been generated 
+
+ Pythia::next(): 965000 events have been generated 
+
+ Pythia::next(): 966000 events have been generated 
+
+ Pythia::next(): 967000 events have been generated 
+
+ Pythia::next(): 968000 events have been generated 
+
+ Pythia::next(): 969000 events have been generated 
+Processed 970000 / 1000000 events, accepted 970000
+
+ Pythia::next(): 970000 events have been generated 
+
+ Pythia::next(): 971000 events have been generated 
+
+ Pythia::next(): 972000 events have been generated 
+
+ Pythia::next(): 973000 events have been generated 
+
+ Pythia::next(): 974000 events have been generated 
+
+ Pythia::next(): 975000 events have been generated 
+
+ Pythia::next(): 976000 events have been generated 
+
+ Pythia::next(): 977000 events have been generated 
+
+ Pythia::next(): 978000 events have been generated 
+
+ Pythia::next(): 979000 events have been generated 
+Processed 980000 / 1000000 events, accepted 980000
+
+ Pythia::next(): 980000 events have been generated 
+
+ Pythia::next(): 981000 events have been generated 
+
+ Pythia::next(): 982000 events have been generated 
+
+ Pythia::next(): 983000 events have been generated 
+
+ Pythia::next(): 984000 events have been generated 
+
+ Pythia::next(): 985000 events have been generated 
+
+ Pythia::next(): 986000 events have been generated 
+
+ Pythia::next(): 987000 events have been generated 
+
+ Pythia::next(): 988000 events have been generated 
+
+ Pythia::next(): 989000 events have been generated 
+Processed 990000 / 1000000 events, accepted 990000
+
+ Pythia::next(): 990000 events have been generated 
+
+ Pythia::next(): 991000 events have been generated 
+
+ Pythia::next(): 992000 events have been generated 
+
+ Pythia::next(): 993000 events have been generated 
+
+ Pythia::next(): 994000 events have been generated 
+
+ Pythia::next(): 995000 events have been generated 
+
+ Pythia::next(): 996000 events have been generated 
+
+ Pythia::next(): 997000 events have been generated 
+
+ Pythia::next(): 998000 events have been generated 
+
+ Pythia::next(): 999000 events have been generated 
+Processed 1000000 / 1000000 events, accepted 1000000
+
+ *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | f fbar -> gamma*/Z0                            221 |    14288674    1000000    1000000 |   3.038e-05  1.621e-08 |
+ |                                                    |                                   |                        |
+ | sum                                                |    14288674    1000000    1000000 |   3.038e-05  1.621e-08 |
+ |                                                                                                                 |
+ *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |     12   Warning in HadronWidths::pickMasses: angular momentum and running widths not used                      | 
+ |      2   Warning in SimpleTimeShower::init: pTmin too low                                                       | 
+ |      1   Warning in TauDecays::decay: maximum decay weight exceeded in tau decay                                | 
+ |      3   Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon       | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
+----------------------------------------
+Production completed.
+Generated events : 1000000
+Accepted events  : 1000000
+Output written   : data/pseudo_data_alphaS_0118.root
+----------------------------------------
